@@ -1,0 +1,270 @@
+/*----------------------------------------------------------------------------------
+								RESPONSIVE DESIGN CSS
+ ----------------------------------------------------------------------------------*/
+html { 
+   /*background: url('../londanBlur.png') no-repeat center center fixed;*/
+   background-color:black;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+}
+
+@media all and (min-width: 1300px){
+	body {
+		font-size: 17px;
+	}
+}
+
+@media all and (max-width: 1299px) and (min-width: 1060px){
+	body {
+		font-size: 14px;
+	}
+
+	.second {
+		max-height: 1.2em !important;
+	}
+}
+
+@media all and (max-width: 1059px) and (min-width: 910px){
+	body {
+		font-size: 12px;
+	}
+	.second {
+		max-height: 1.2em !important;
+	}
+}
+
+@media all and (max-width: 909px) and (min-width: 605px){
+	body {
+		font-size: 8px;
+	}
+	.second {
+		max-height: 1.2em !important;
+	}
+}
+
+@media all and (max-width: 604px) and (min-width: 405px){
+	body {
+		font-size: 5px;
+	}
+	.second {
+		max-height: 1.2em !important;
+	}
+}
+
+@media all and (max-width: 404px){
+	body {
+		font-size: 3.5px;
+	}
+
+	.second {
+		max-height: 1.2em !important;
+	}
+
+	.line:nth-child(2){
+		margin-left: -1.5em !important;
+	}
+}
+
+
+/*----------------------------------------------------------------------------------*
+*									HEADER											*
+*-----------------------------------------------------------------------------------*/
+
+.header {
+ 	margin-left:0;
+ 	margin-top:0;
+ 	background-color: #fff;
+ 	width: 100%;
+ 	height:8em;
+ }
+ 
+#name{
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: black;
+	font-size: 2.5em;
+	float:left;
+	text-align: left;
+	margin-left: 1.5em;
+	margin-top: 1em;
+}
+
+#myEmail {
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: black;
+	font-size: 1.25em;
+	float:right;
+	text-align: right;
+	margin-right: 1.5em;
+	margin-top: 3em;
+}
+
+#myEmail > a {
+	text-decoration: none;
+	color: black;
+	hover: grey;
+}
+
+/*----------------------------------------------------------------------------------
+						MAIN (DADDY WRAPPER)
+----------------------------------------------------------------------------------*/
+ .main {
+ 	margin: 0 auto;
+	margin-top: 2em;
+	text-align: center;
+	width: 74em;
+	position: relative;
+ }
+ 
+
+/*----------------------------------------------------------------------------------
+							INDIVIDUAL LINE CLASS
+				'margin-left' makes the indentations of different lines
+----------------------------------------------------------------------------------*/
+ 
+/*----------------------------
+ 	SCHOOL
+----------------------------*/
+ .content_line {
+ 	margin-left: 12em;
+ 	margin-bottom:1em;
+ }
+ 
+/*----------------------------
+ 	
+----------------------------*/
+.content_line:nth-child(1){
+	margin-left: 12em;
+	margin-bottom:1em;
+} 
+ 
+/*----------------------------
+ 	EDUCATION
+----------------------------*/
+.content_line:nth-child(2){
+	margin-left: 9.5em;
+	margin-bottom:1em;
+} 
+ 
+/*----------------------------
+ 	SPECIALTIES
+----------------------------*/
+.content_line:nth-child(3){
+	margin-left: 7em;
+	margin-bottom:1em;
+} 
+ 
+/*----------------------------
+ 	KNOWLEDGEABLE OF
+----------------------------*/
+.content_line:nth-child(4){
+	margin-left:11em;
+} 
+
+/*----------------------------
+ 	KNOWLEDGEABLE OF
+----------------------------*/
+.content_line:nth-child(5){
+	margin-left: 9em;
+} 
+ 
+/*----------------------------------------------------------------------------------
+										???
+----------------------------------------------------------------------------------*/
+ 
+ .line_container {
+	color: #fff;
+	margin: 0 auto;
+}
+
+.simple_content {
+ 	/*font-family: 'Uni Sans', sans-serif;*/
+ 	font-family: 'Lato', sans-serif;
+	font-weight: 100;
+	color: #fff;
+	font-size: 2.8em;
+	float: left;
+	margin: 0 auto;
+	padding: 5px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-shadow: 0px 0px 10px rgba(0, 0, 0, 0);
+}
+ 
+.iowa_city {
+ 	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	font-size: 3em;
+	max-height: 1.5em;
+	margin-left: 10px;
+	padding: 2.5px;
+	white-space: nowrap;
+	float: left;
+	overflow: hidden;
+}
+ 
+.moving_line_content {
+ 	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	font-size: 3em;
+	max-height: 1.2em;
+	margin-left: 10px;
+	padding: 0;
+	white-space: nowrap;
+	float: left;
+	overflow: hidden;
+	
+	/*ORANGE COLOR: FF8000*/
+	/*GOLD COLOR: FFFF00*/
+	border-bottom: 2px solid #FFEE00;
+	border-top: 2px solid #FFEE00;
+
+ }
+ 
+
+ /*----------------------------------------------------------------------------------
+				LINKS AT BOTTOM OF PAGE: RESUME, LINKEDIN, GITHUB
+ ----------------------------------------------------------------------------------*/
+.important_links {
+ 	/*font-family: 'Uni Sans', sans-serif;*/
+ 	font-family: 'Lato', sans-serif;
+	font-weight: 700;
+	color: #fff;
+	font-size: 3em;
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+	margin-top: 2em;
+	text-align: center;
+	margin-bottom:1em;
+
+ }
+ 
+.important_links > a {
+	text-decoration: none;
+	color: #fff;
+	
+}
+
+.important_links > a:nth-child(2), 
+.important_links > a:nth-child(3),
+{
+	margin-left: 2em;
+}
+
+.important_links > a:hover {
+	color: #B2B2B2;
+	/*color: rgba(255, 128, 0, 0.8);*/
+	cursor: pointer;
+}
+
+#spacer {
+	font-family: 'Lato', sans-serif;
+	color: #fff;
+	hover: #fff;
+}

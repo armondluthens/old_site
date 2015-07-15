@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="style_practice.css" />
+   <title>Armond Luthens</title>
+   <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,700,900' rel='stylesheet' type='text/css'>
+   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+   <script>
+   		$("#education_slideshow > div:gt(0)").hide();
+		setInterval(function() { 
+  		$('#education_slideshow > div:first')
+    		.slideDown(1500)
+    		.next()
+    		.slideDown(1500)
+    		.end()
+    		.appendTo('#education_slideshow');
+		},  1500);
+	</script>
+	
+	<script>
+   		$("#specialties_slideshow > div:gt(0)").hide();
+		setInterval(function() { 
+  		$('#specialties_slideshow > div:first')
+    		.slideDown(2200)
+    		.next()
+    		.slideDown(2200)
+    		.end()
+    		.appendTo('#specialties_slideshow');
+		},  2200);
+	</script>
+	
+	<script>
+   		$("#knowledge_slideshow > div:gt(0)").hide();
+		setInterval(function() { 
+  		$('#knowledge_slideshow > div:first')
+    		.slideDown(2500)
+    		.next()
+    		.slideDown(2500)
+    		.end()
+    		.appendTo('#knowledge_slideshow');
+		},  2500);
+	</script>
+	
+	<script>
+   		$("#interests_slideshow > div:gt(0)").hide();
+		setInterval(function() { 
+  		$('#interests_slideshow > div:first')
+    		.slideDown(3000)
+    		.next()
+    		.slideDown(3000)
+    		.end()
+    		.appendTo('#interests_slideshow');
+		},  3000);
+	</script>
+	
+	
+   <meta name="viewport" content="width=device-width" />
+   
+</head>
+
+<body>
+
+
+<!--
+CLASSES:
+main-----------------------------infoContent
+content_line -----------------------------line
+line_container-----------------------------header
+simple_content-----------------------------first
+moving_line_content-----------------------------second switch (moving second)
+iowa_city-----------------------------second (static second)
+moving_container-----------------------------container
+spinlist-----------------------------itemwrap
+current_li_displayed-----------------------------current
+
+
+
+
+important_links-----------------------------headerContent
+
+-->
+<!------------------------------------------------------------------------------
+	Header
+------------------------------------------------------------------------------>
+	<div class="header">
+		<div id="name">Armond Luthens</div>
+		<div id="myEmail"><a href="mailto:armond-luthens@euiowa.edu">armond-luthens@uiowa.edu</a></div>
+	</div>
+
+<!------------------------------------------------------------------------------
+	Main Wrapper Tag
+------------------------------------------------------------------------------>	
+	<div class="main">
+
+	
+<!------------------------------------------------------------------------------
+	University of Iowa
+------------------------------------------------------------------------------>
+
+	<div class="content_line">
+		<div class="line_container">
+			<div class="iowa_city">University of Iowa <span style="color:#B2B2B2;">|</span></div>
+			<div class="simple_content"> Iowa City, IA</div>
+			<div style="clear: both;"></div>
+		</div> <!-- line_container -->
+	</div> <!-- content_line -->
+
+
+<!------------------------------------------------------------------------------
+	Education: Computer Engineering, Computer Science, Entrepreneurship
+------------------------------------------------------------------------------>
+	
+	<div class="content_line">
+		<div class="line_container">
+			<div class="simple_content">Areas of Study </div>
+			<div class="moving_line_content">
+					<div id="education_slideshow">
+						<div>Computer Engineering</div>
+						<div>Computer Science</div>
+						<div>Entrepreneurship</div>
+					</div>
+				
+				<!--
+				<div id="education_id" class="moving_container">
+				
+					<ul class="spin_list">	
+						<!-- Elements in Moving List -->
+						<li class="current_li_displayed"><span>Computer Engineering</span></li> 
+						<li><span>Computer Science</span></li>
+						<li><span>Entrepreneurship</span></li>
+						<!-- End Moving List -->
+					</ul> <!-- spin_list -->
+					-->
+							
+					
+				</div> <!-- moving_container -->
+			</div> <!-- moving_line_content -->
+			<div style="clear: both;"></div>
+		</div> <!-- line_container -->
+	</div> <!-- content_line -->
+
+<!------------------------------------------------------------------------------
+	Speciality Programming Languages
+------------------------------------------------------------------------------>
+	<div class="content_line">
+		<div class="line_container">
+			<div class="simple_content">Specialties </div>
+			<div class="moving_line_content">
+					
+					<div id="specialties_slideshow" style="margin-left:1em;">
+						<div>Java</div>
+						<div>C++</div>
+						<div>C</div>
+						<div>HTML/CSS</div>
+						<div>Data Structures</div>
+					</div>
+				
+				<!--
+				<div id="specialty_id" class="moving_container">
+					<ul class="spin_list">	
+						<!-- Elements in Moving List -->
+						<li class="current_li_displayed"><span>Java</span></li> 
+						<li><span>C++</span></li>
+						<li><span>C</span></li>
+						<li><span>HTML/CSS</span></li>
+						<li><span>Data Structures</span></li>
+						<!-- End Moving List -->		
+					</ul> <!-- spin_list -->
+					-->
+					
+				</div> <!-- moving_container -->
+				
+				
+			</div> <!-- moving_line_content -->
+			<div style="clear: both;"></div>
+		</div> <!-- line_container -->
+	</div> <!-- content_line -->
+	
+<!------------------------------------------------------------------------------
+	Languages I've Played With
+------------------------------------------------------------------------------>
+	<div class="content_line">
+		<div class="line_container">
+			<div class="simple_content">Knowledgeable of </div>
+			<div class="moving_line_content">
+			
+				<div id="knowledge_slideshow" style="margin-left:1em;">
+						<div>C#</div>
+						<div>JavaScript</div>
+						<div>jQuery</div>
+						<div>Swift iOS Development</div>
+					</div>
+				<!--
+				<div id="play_id" class="moving_container">
+					<ul class="spin_list">
+						
+						<!-- Elements in Moving List -->
+						<li class="current_li_displayed"><span>C#</span></li> 
+						<li><span>JavaScript</span></li>
+						<li><span>Swift iOS Development</span></li>
+						<li><span>Cognos TM1</span></li>
+						<li><span>Shell Scripting</span></li>
+						<!-- End Moving List -->
+					</ul> <!-- spin_list -->
+					-->
+				</div> <!-- moving_container -->
+				
+				
+			</div> <!-- moving_line_content -->
+			<div style="clear: both;"></div>
+		</div> <!-- line_container -->
+	</div> <!-- content_line -->
+<!------------------------------------------------------------------------------
+	Interests in Tech Field
+------------------------------------------------------------------------------>
+	<div class="content_line">
+		<div class="line_container">
+			<div class="simple_content">Interests </div>
+			<div class="moving_line_content">
+				<div id="interests_slideshow" style="margin-left:1em;">
+						<div>Backend Development</div>
+						<div>System Architecture</div>
+						<div>Network Security</div>
+						<div>Web Design</div>
+					</div>
+					
+				<!--
+				<div id="interests_id" class="moving_container">
+					<ul class="spin_list">
+						<!-- Elements in Moving List -->
+						<li class="current_li_displayed"><span>Back-end Development</span></li> 
+						<li><span>System Architecture/Security</span></li>
+						<li><span>Web Design</span></li>
+						<!-- End Moving List -->
+					</ul> <!-- spin_list -->
+					-->
+				</div> <!-- moving_container -->
+				
+			
+			</div> <!-- moving_line_content -->
+			<div style="clear: both;"></div>
+		</div> <!-- line_container -->
+	</div> <!-- content_line -->
+</div> <!-- main -->	
+	
+<!------------------------------------------------------------------------------
+	Important Links
+------------------------------------------------------------------------------>
+
+<div class="important_links">
+	<a href="">Resume <span id="spacer">|</span>   </a>
+	<a href="https://www.linkedin.com/in/armondluthens">Linkedin   <span id="spacer">|</span> </a>
+	<a href="https://github.com/armondluthens">Github</a>
+</div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
